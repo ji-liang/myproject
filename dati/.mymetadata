@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dati"
+  id="myeclipse.1555317247420"
+  context-root="/dati"
+  j2ee-spec="5.0"
+  archive="dati.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

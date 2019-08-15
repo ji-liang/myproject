@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/admin" extends="struts-default">
+		<interceptors>
+			<interceptor name="lg" class="com.my.action.LoginInterceptor"></interceptor>
+		</interceptors>
+		<action name="login" class="com.my.action.LoginAction">	
+			<result name="index">index.jsp</result>
+			<result name="error">login.jsp</result>	
+		</action>
+		<action name="idx_*" class="com.my.action.indexAction" method="{1}">
+			<result name="upkeep">upkeep.jsp</result>
+		</action>
+		
+	</package>
+	<package name="inde" namespace="/" extends="struts-default">
+		<action name="msg" class="com.my.action.ShowAction"  >
+			<result name="index">/index.html</result>
+		</action>
+	</package>
+</struts>    
